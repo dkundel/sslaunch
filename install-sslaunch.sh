@@ -2,9 +2,9 @@ echo "==> Resetting grub to default"
 cp /usr/share/grub/default/grub /etc/default/grub
 
 echo "==> Change GRUB settings"
-sed -i .bak -e s/\#GRUB_TERMINAL=.*/GRUB_TERMINAL=console/g /etc/default/grub
-sed -i .bak1 -e s/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT=\"text\"/g /etc/default/grub
-sed -i .bak2 -e s/GRUB_CMDLINE_LINUX=.*/GRUB_CMDLINE_LINUX=\"text\"/g /etc/default/grub
+sed -i -e s/\#GRUB_TERMINAL=.*/GRUB_TERMINAL=console/g /etc/default/grub
+sed -i -e s/GRUB_CMDLINE_LINUX_DEFAULT=.*/GRUB_CMDLINE_LINUX_DEFAULT=\"text\"/g /etc/default/grub
+sed -i -e s/GRUB_CMDLINE_LINUX=.*/GRUB_CMDLINE_LINUX=\"text\"/g /etc/default/grub
 
 echo "==> Update GRUB settings"
 update-grub
