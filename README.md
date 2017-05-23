@@ -19,8 +19,8 @@
 
 ```bash
 sudo apt-get -y install apt-transport-https ca-certificates curl
-
 curl -fsSL https://rawgit.com/dkundel/sslaunch/master/install-sslaunch.sh | sudo bash -
+sudo usermod -aG docker $USER
 ```
 
 ### 4. Reboot
