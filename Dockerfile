@@ -41,10 +41,13 @@ RUN ln -s /swift-3.1.1-RELEASE-ubuntu16.04/usr/bin/swift /bin/swift
 # Install PHP
 RUN apt-get install --yes php
 
+# Install editors
+RUN apt-get install --yes vim nano emacs
+
 RUN echo "echo \" ███████╗ ███████╗ ██╗       █████╗  ██╗   ██╗ ███╗   ██╗  ██████╗ ██╗  ██╗ \"" >> /root/.bashrc
 RUN echo "echo \" ██╔════╝ ██╔════╝ ██║      ██╔══██╗ ██║   ██║ ████╗  ██║ ██╔════╝ ██║  ██║ \"" >> /root/.bashrc
 RUN echo "echo \" ███████╗ ███████╗ ██║      ███████║ ██║   ██║ ██╔██╗ ██║ ██║      ███████║ \"" >> /root/.bashrc
 RUN echo "echo \" ╚════██║ ╚════██║ ██║      ██╔══██║ ██║   ██║ ██║╚██╗██║ ██║      ██╔══██║ \"" >> /root/.bashrc
 RUN echo "echo \" ███████║ ███████║ ███████╗ ██║  ██║ ╚██████╔╝ ██║ ╚████║ ╚██████╗ ██║  ██║ \"" >> /root/.bashrc
 RUN echo "echo \" ╚══════╝ ╚══════╝ ╚══════╝ ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═══╝  ╚═════╝ ╚═╝  ╚═╝ \"" >> /root/.bashrc
-RUN echo "echo \"Welcome! You have .NET Core, Node.js, Ruby, Python, Python3, Java, Swift, PHP, C++ and Rust available.\"" >> /root/.bashrc
+RUN echo "echo \"Welcome! You have .NET Core, Node.js, Ruby, Python, Python3, Java, Swift, PHP, C++ available.\"" >> /root/.bashrc
