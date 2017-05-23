@@ -9,7 +9,26 @@
  ╚══════╝ ╚══════╝ ╚══════╝ ╚═╝  ╚═╝  ╚═════╝  ╚═╝  ╚═══╝  ╚═════╝ ╚═╝  ╚═╝ 
 ```
 
-## Setup
+## Setup Automated
+
+### [1. Flash a USB stick with Ubuntu 16.04](https://www.ubuntu.com/download/desktop/create-a-usb-stick-on-macos)
+
+### 2. Install Ubuntu 16.04 from USB stick
+
+### 3. Open terminal and run script
+
+```bash
+sudo apt-get -y install \
+  apt-transport-https \
+  ca-certificates \
+  curl
+
+curl -fsSL https://rawgit.com/dkundel/sslaunch/master/install-sslaunch.sh | sudo bash -
+```
+
+### 4. Reboot
+
+## Setup Manual
 
 ### [1. Flash a USB stick with Ubuntu 16.04](https://www.ubuntu.com/download/desktop/create-a-usb-stick-on-macos)
 

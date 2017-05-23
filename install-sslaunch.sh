@@ -11,10 +11,6 @@ update-grub
 systemctl set-default multi-user.target
 
 echo "==> Installing Docker"
-apt-get -y install \
-  apt-transport-https \
-  ca-certificates \
-  curl
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 
